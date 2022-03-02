@@ -1,0 +1,118 @@
+.block1{
+  display: flex;
+  width: 90vw;
+  margin: auto;
+}
+.block2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+}
+.block4{
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  margin:50px 0px;
+}
+.block3{
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:30px 60px;
+
+}
+.gridItem{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 150px;
+  width: 200px;
+  box-shadow: 3px 6px 24px rgba(0,0,0,0.1);
+  animation: moveIn 2s ease 0s 1;
+}
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0,50%,0);
+    transform: translate3d(0,50%,0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .block1{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .block2,.block4{
+    min-height:400px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.outer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+}
+.investmentItem{
+  opacity:0;
+  pointer-events: none;
+  position: absolute;
+  animation: animate 18s linear infinite;
+  animation-delay: calc(3s * var(--delay));
+  font-size: 50px;
+}
+/* .outer:hover .investmentItem{
+  animation-play-state: paused;
+} */
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  4.17%,16.67%{
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  20.83%,33.33%{
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+  }
+  37.5%,50%{
+    opacity: 0.4;
+    transform: translateY(-100%) scale(0.7);
+  }
+  54.17%,100%{
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+  }
+}
+.btn{
+  background-color: #00D09C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: fit-content;
+  height: 40px;
+  margin-top: 30px;
+  cursor: pointer;
+}

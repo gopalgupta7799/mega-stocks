@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+Steps for contributors:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. From "https://github.com/gopalgupta7799/mega-stocks" fork the repo. This will clone repo in your github profile.
+2. Create a folder in your PC (for clarity use the name as Mega Stocks).
+3. Open this folder in any command shell(PowerShell or cmd or VS Code terminal or git-bash).
+4. In the shell type "git clone https://github.com/your-github-username/mega-stocks". This will clone your remote github repo to your local PC. and mega-stocks repo will be created.
+5. Open this mega-stocks repo in vs code.
+6. In terminal type "npm install" to install all required packages.
+7. Add central repo by typing "git remote add gopal https://github.com/gopalgupta7799/mega-stocks.git". 
+8. Type "npm start" to run react app.
 
-## Available Scripts
+To reduce commits and keep git log clean follow these steps always:
 
-In the project directory, you can run:
+9. Run "git pull gopal main" to fetch latest commit from central repo.
+10. Make your changes, add features, etc. 
+11. Add changes to stage by typing "git add ." and then stash your changes by typing "git stash".
+12. Again repeat step 9.
+13. Pop stash by typing "git stash pop". Resolve conflicts if any.
+14. Add files to stage by using "git add ." and then commit changes by typing "git commit -m "Your Commit Message"".
+15. Push your changes to your remote repo on github by typing "git push -u origin main".
 
-### `npm start`
+To merge your changes to central repo:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+15. Go to "https://github.com/your-github-username/mega-stocks".
+16. Click on "Pull Request" and create a pull request.
